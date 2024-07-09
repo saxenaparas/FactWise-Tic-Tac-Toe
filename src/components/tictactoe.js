@@ -1,5 +1,3 @@
-// TicTacToe.js
-
 import React, { useState } from 'react';
 import './TicTacToe.css';
 import Cross from '../assets/Cross.svg'
@@ -77,18 +75,27 @@ const TicTacToe = () => {
                 <div className="status">{renderStatus()}</div>
                 <div className="board-row">
                     {renderSquare(0)}
+                    
                     {renderSquare(1)}
+                    
                     {renderSquare(2)}
+                   
                 </div>
                 <div className="board-row">
                     {renderSquare(3)}
+                    
                     {renderSquare(4)}
+                   
                     {renderSquare(5)}
+                  
                 </div>
                 <div className="board-row">
                     {renderSquare(6)}
+                    
                     {renderSquare(7)}
+                    
                     {renderSquare(8)}
+                   
                 </div>
             </div>
             <button className="reset-btn" onClick={resetGame}>RESET</button>
